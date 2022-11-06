@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let age = prompt('Какой твой возвраст?');
+
+        if (isNaN(age)) {
+            alert('Ты ввел неправильные данные, введи число');
+        } else if (age % 100 >= 5 && age % 100 <= 20 || age % 10 == 0) {
+            alert(`Тебе ${age} лет`);
+        } else if (age % 10 >= 2 && age % 10 <= 4) {
+            alert(`Тебе ${age} года`);
+        } else if (age % 10 == 1) {
+            alert(`Тебе ${age} год`);
+        } else {
+            alert(`Тебе ${age} лет`);
+        }
+
+    </script>
+</body>
+
+</html>
